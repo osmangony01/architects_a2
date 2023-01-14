@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans';
+}
+.header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+    display: flex;
+    padding: 45px 150px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+}
+.header-detail {
+    text-align: center;
+    color: #131313;
+}
+.header-detail h2 {
+    font-weight: 700;
+    font-size: 64px;
+   padding-bottom: 25px;
+}
+.header-detail p{
+    padding-bottom: 25px;
+}
+.btn-primary{
+    background: #FF900E;
+    border-radius: 5px;
+    padding: 14px 18px;
+    color: white;
+    border: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+.info{
+    padding: 0 290px;
+}
+
+.header-detail .banner{
+    padding: 45px 150px 60px;
+}
+.banner img{
+    width: 100%;
+}
+.features{
+    display: flex;
+    margin: 70px 180px 120px;
+    gap: 50px;
+    align-items: center;
+}
+
+.feature-photos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.feature-photos img{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.feature-info h2{
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+.feature-info p{
+    padding: 25px 0;
+    font-size: 16px;
+    color: #727272;
+} 
+.strong-text{
+    color: black;
+}
+.mark{
+    color: #FF900E;
+}
+
+.enjoy-love{
+    width: 586px;
+}
+.enjoy-love-title{
+    font-weight: 700;
+    font-size: 45px;
+    border-left: 3px solid #FF900E;
+    padding-left: 20px;
+    
+} 
+.enjoy-love .info h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn-second{
+    color: white;
+    background-color: #FF900E;
+    border-radius: 5px;
+    padding: 14px 18px;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    bottom: 71px;
+}
+
+.btn-mark{
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.features-enjoy-love{
+    margin: 0px 120px 0;
+    display: flex;
+    gap:  30px;
+}
+.enjoy-love-photo{
+    
+}
+.photo1{
+    padding-left: 60px;
+}
+.enjoy-love-photo img{
+    width: 100%;
+    height: 900px;
+}
+.enjoy-love-info .info1{
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.enjoy-love .description{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.info1 h2{
+    padding-bottom: 10px;
+}
+.info1 p{
+    color: #727272;
+}
+
+
+
+.facts{
+    margin: 30px 120px 150px;
+}
+.facts-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+.facts-description{
+    color:  #727272;
+    width: 542px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.facts-detail{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-item{
+    display: flex;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.facts-item:hover{
+    border: 2px solid skyblue;
+}
+.count{
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 5px 0;
+}
+.item-name{
+    color: #727272;
+}
+
+.sponsor{
+    text-align: center;
+}
+.sponsor h1{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.sponsor p{
+    padding:0  400px;
+    color: #727272;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.logos {
+    display: flex;
+    margin: 30px 120px 100px;
+    justify-content: space-between;
+}
+.logo{
+
+}
+.logo img{
+
+}
+
+.footer{
+    margin: 10px 120px 80px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+.footer p{
+    padding: 25px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:576px) {
+    nav{
+        /* flex-direction: row-reverse; */
+        padding: 30px;
+        gap: 15px;
+    }
+    nav h2 {
+        font-size: 24px;
+    }
+    nav ul li {
+        font-size: 16px;
+    }
+    .info { 
+        padding: 30px 40px 0 40px;
+    }
+    .header-detail h2 {
+        font-size: 45px;
+    }
+    .header-detail p {
+        font-size: 15px;
+    }
+    .btn-primary {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    .header-detail .banner{
+        padding: 30px 40px 40px;
+    }
+    .features {
+        margin: 60px 80px 100px;
+        flex-direction: column;
+    }
+    .feature-photos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .feature-photos img {
+        width: 100%;
+        height: 100%;
+    }
+    .feature-info h2 {
+        font-size: 30px;
+    }
+    .feature-info p {
+        padding: 20px 0;
+        font-size: 14px;
+    }
+
+
+    .features-enjoy-love {
+        margin: 0px 40px 30px;
+        flex-direction: column;
+    }
+    .enjoy-love {
+        width: 100%;
+    }
+    .enjoy-love-title {
+        font-size: 36px;
+    }
+    .enjoy-love .description {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    .info1 h2 {
+        font-size: 20px;
+    }
+    .info1 p {
+        font-size: 15px;
+    }
+    .photo1 {
+        padding-left: 40px;
+    }
+    .enjoy-love-photo img {
+        width: 100%;
+        height: 100%;
+    }
+    .btn-mark {
+        font-size: 30px;
+    }
+    .btn-second {
+        bottom: 54px;
+    }
+    .enjoy-love-info .info1 {
+        padding: 25px;
+    }
+
+    .facts {
+        margin: 0px 40px;
+    }
+    .facts-title {
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .facts-description {
+        width: 100%;
+        margin-bottom: 50px
+    }
+    .facts-detail {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .sponsor {
+        margin: 100px 40px 100px;
+    }
+    .sponsor h1 {
+        font-size: 36px;
+    }
+    .sponsor p {
+        padding: 10px 0;
+    }
+    .logos {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer {
+        margin: 20px 40px 60px;
+    }
+}
