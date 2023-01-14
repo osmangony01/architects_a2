@@ -368,6 +368,7 @@ nav ul li a {
     .logos {
         flex-direction: column;
         gap: 40px;
+        margin: 0 0 40px;
     }
 
     .footer {
