@@ -39,6 +39,11 @@ nav ul li a {
     text-decoration: none;
     color: #424242;
 }
+nav h2{
+    padding: 0;
+    margin: 0 0 10px;
+}
+
 .header-detail {
     text-align: center;
     color: #131313;
@@ -239,13 +244,122 @@ nav ul li a {
 
 }
 
+.about {
+    margin: 100px 150px 150px;
+    margin-top: 150px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 85px 100px;
+    text-align: center;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px
+}
+
+.section-description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+
+}
+
+
+.contact {
+    display: flex;
+    margin-top: 0;
+    padding: 100px 140px;
+    gap: 100px;
+    align-items: center;
+}
+.contact-info{
+    /* text-align: right; */
+}
+.contact-title {
+    margin-bottom: 30px;
+    font-size: 36px;
+
+}
+.contact-title2{
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+.contact a {
+    margin-right: 20px;
+}
+.contact-msg{
+    /* border-left: 3px solid #FF900E; */
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+    padding: 45px;
+    border-radius: 15px;
+
+}
+.contact-btn {
+    height: 40px;
+    font-weight: 700;
+    background: #FF900E;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    padding: 10px 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+.contact input {
+    width: 320px;
+    display: block;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    border: 1px solid #f2f2f2;
+    outline: none;
+    font-family:'Work Sans'; 
+    
+}
+.contact input:hover {
+    border: 1px solid blue;
+}
+.contact input:focus {
+    border: 3px solid skyblue;
+  }
+.contact textarea {
+    width: 320px;
+    border-radius: 8px;
+    border:1px solid #f2f2f2;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    outline: none;
+    font-family:'Work Sans'; 
+}
+.contact textarea:hover{
+    border: 1px solid blue;
+}
+.contact textarea:focus {
+    border: 3px solid skyblue;
+  }
+
 .footer{
-    margin: 10px 120px 80px;
+    margin: 50px 120px 80px;
     background-color: #FFF4E7;
     border-radius: 8px;
+    padding: 60 0px;
+    padding: 25px 0;
+    font-weight: 700;
 }
 .footer p{
-    padding: 25px;
     text-align: center;
 }
 
@@ -253,15 +367,24 @@ nav ul li a {
 @media screen and (max-width:576px) {
     nav{
         /* flex-direction: row-reverse; */
+        flex-direction: column;
+        align-items: flex-start;
         padding: 30px;
-        gap: 15px;
+        /* gap: 15px; */
     }
     nav h2 {
         font-size: 24px;
     }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     nav ul li {
         font-size: 16px;
+        padding: 3px 0;
     }
+    
     .info { 
         padding: 30px 40px 0 40px;
     }
@@ -298,7 +421,6 @@ nav ul li a {
         padding: 20px 0;
         font-size: 14px;
     }
-
 
     .features-enjoy-love {
         margin: 0px 40px 30px;
@@ -371,7 +493,40 @@ nav ul li a {
         margin: 0 0 40px;
     }
 
-    .footer {
-        margin: 20px 40px 60px;
+    .about {
+        margin: 0px 40px 100px;
+        padding: 50px 35px;
     }
+
+    .contact {
+        padding: 0;
+        margin: 0px 40px;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .contact-msg {
+        margin: 15px;
+        width: 100%;
+        padding: 0;
+    }
+    .contact-msg .contact-content{
+        margin: 25px;
+    }
+    .contact-content input{
+        width: 92%;
+    }
+
+    .contact-content input{
+        width: 92%;
+    }
+    
+    .contact-content textarea{
+        width: 92%;
+    }
+
+    .footer {
+        margin: 70px 40px 60px;
+    }
+
 }
+
