@@ -497,7 +497,9 @@ nav h2{
         margin: 0px 40px 100px;
         padding: 50px 35px;
     }
-
+    .section-description {
+        font-size: 16px;
+    }
     .contact {
         padding: 0;
         margin: 0px 40px;
