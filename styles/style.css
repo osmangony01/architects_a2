@@ -521,7 +521,9 @@ nav h2{
     .contact-content input{
         width: 92%;
     }
-    
+    .contact-title2{
+        font-size: 23px;
+    }
     .contact-content textarea{
         width: 92%;
     }
